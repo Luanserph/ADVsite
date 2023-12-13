@@ -35,14 +35,6 @@ Adicione abaixo capturas de tela da landing page para uma visualização rápida
 - [Luan Silva][(https://github.com/Luanserph)] - Desenvolvedor principal
 - [Victor Motta][(https://github.com/VictorMottaDev)] - Colaborador
 
-## Como Contribuir
-
-1. Faça um fork do repositório.
-2. Crie uma branch para sua contribuição: `git checkout -b feature/nova-feature`.
-3. Faça suas alterações e commit: `git commit -m 'Adiciona nova feature'`.
-4. Faça push para a branch: `git push origin feature/nova-feature`.
-5. Abra um pull request.
-
 ## Issues
 
 Se encontrar algum problema ou tiver sugestões, sinta-se à vontade para abrir uma issue neste repositório.
