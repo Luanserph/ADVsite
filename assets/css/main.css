@@ -936,6 +936,25 @@ section {
 .about {
   --background-color: #f4f4f4;
 }
+.about .content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 20px;
+  background: rgba(var(--primary-color-rgb), 0.05);
+  color: var(--primary-color);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px; /* Adicione uma margem inferior */
+}
+
+/* Ou ajuste a largura do conteúdo para evitar o ocultamento */
+.about .content h3 {
+  max-width: calc(100% - 40px); /* Subtrai o dobro do preenchimento para garantir a largura adequada */
+  box-sizing: border-box; /* Garante que a largura inclua preenchimento e borda */
+}
 .sobre-nos{
   font-size: 20px;
   font-weight: 700px;
@@ -994,7 +1013,17 @@ section {
   border-radius: 10px;
   transition: all 0.3s ease-out 0s;
   background-color: #fff;
+  height: 450px;
+  margin-right: 0; /* Removendo a margem direita */
+  margin-left: 0; /* Removendo a margem esquerda */
+  /* TODO: Revisit calc order after https://github.com/react-bootstrap/react-bootstrap/issues/6039 is fixed */
+  margin-top: calc(-1 * 1.5rem); /* stylelint-disable-line function-disallowed-list */
+  margin-right: calc(-.5 * -4.5rem); /* stylelint-disable-line function-disallowed-list */
+  margin-left: calc(-.5 * 1.5rem); /* stylelint-disable-line function-disallowed-list */
+
+  flex: 0 0 auto;
 }
+
 .about .icon-box h3 {
   font-size: 24px;
   font-weight: 700;
@@ -1023,7 +1052,6 @@ section {
 }
 .icon-boxes {
   display: flex;
-  justify-content: center;
 }
 
 .about .icon-box p {
@@ -1047,6 +1075,39 @@ section {
   .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
     margin-top: 0;
   }
+}
+
+.scroll-container {
+  position: relative;
+  padding-right: 17px; /* Adiciona espaço para a barra de rolagem original */
+}
+
+.scroll-content {
+  width: 100vw;
+  background-color: #f0f0f0; /* Cor de fundo do conteúdo */
+  padding: 20px;
+}
+
+/* Estilo da barra de rolagem personalizada */
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+/* Estilo dos objetos que se movem quando a barra de rolagem é hover */
+.object-to-move {
+  transition: transform 0.3s ease-out;
+}
+
+.scroll-container:hover .scroll-container::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+}
+
+.scroll-container:hover .object-to-move {
+  transform: translateX(12px);
 }
 
 /* Stats Section - Home Page
