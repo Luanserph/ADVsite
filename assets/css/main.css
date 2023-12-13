@@ -96,6 +96,12 @@ section {
   font-weight: 700;
   position: relative;
 }
+.section-title .titulo-4 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  position: relative;
+  bottom: -45px;
+}
 
 .section-title h2:before,
 .section-title h2:after {
@@ -938,7 +944,7 @@ section {
 }
 
 /* About Section - Home Page
-------------------------------*/
+------------------------------
 .about {
   --background-color: #f4f4f4;
 }
@@ -953,20 +959,20 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px; /* Adicione uma margem inferior */
+  margin-bottom: 10px; /* Adicione uma margem inferior 
 }
 
-/* Ou ajuste a largura do conteúdo para evitar o ocultamento */
+/* Ou ajuste a largura do conteúdo para evitar o ocultamento 
 .about .content h3 {
-  max-width: calc(100% - 40px); /* Subtrai o dobro do preenchimento para garantir a largura adequada */
-  box-sizing: border-box; /* Garante que a largura inclua preenchimento e borda */
+  max-width: calc(100% - 40px); /* Subtrai o dobro do preenchimento para garantir a largura adequada 
+  box-sizing: border-box; /* Garante que a largura inclua preenchimento e borda 
 }
 .sobre-nos{
   font-size: 20px;
   font-weight: 700px;
   line-height: 19px;
   padding: 10px 29px;
-  background: linear-gradient(to right, rgba(var(--primary-color-rgb), 0.1), #f9f6f6); /* Gradiente da esquerda para a direita */
+  background: linear-gradient(to right, rgba(var(--primary-color-rgb), 0.1), #f9f6f6); /* Gradiente da esquerda para a direita 
 
   color: var(--primary-color);
   border-radius: 7px;
@@ -1020,12 +1026,12 @@ section {
   transition: all 0.3s ease-out 0s;
   background-color: #fff;
   height: 450px;
-  margin-right: 0; /* Removendo a margem direita */
-  margin-left: 0; /* Removendo a margem esquerda */
-  /* TODO: Revisit calc order after https://github.com/react-bootstrap/react-bootstrap/issues/6039 is fixed */
-  margin-top: calc(-1 * 1.5rem); /* stylelint-disable-line function-disallowed-list */
-  margin-right: calc(-.5 * -4.5rem); /* stylelint-disable-line function-disallowed-list */
-  margin-left: calc(-.5 * 1.5rem); /* stylelint-disable-line function-disallowed-list */
+  margin-right: 0; /* Removendo a margem direita 
+  margin-left: 0; /* Removendo a margem esquerda 
+  /* TODO: Revisit calc order after https://github.com/react-bootstrap/react-bootstrap/issues/6039 is fixed 
+  margin-top: calc(-1 * 1.5rem); /* stylelint-disable-line function-disallowed-list 
+  margin-right: calc(-.5 * -4.5rem); /* stylelint-disable-line function-disallowed-list 
+  margin-left: calc(-.5 * 1.5rem); /* stylelint-disable-line function-disallowed-list 
 
   flex: 0 0 auto;
 }
@@ -1082,7 +1088,114 @@ section {
     margin-top: 0;
   }
 }
+*/
 
+/* About Section - Home Page
+------------------------------*/
+.about {
+  --background-color: #f4f4f4;
+}
+
+.about .content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  padding: 10px 20px;
+  background: rgba(var(--primary-color-rgb), 0.05);
+  color: var(--primary-color);
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.about .content h2 {
+  font-weight: 700;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content .read-more {
+  background: var(--primary-color);
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.about .content .read-more:hover {
+  background: rgba(var(--primary-color-rgb), 0.8);
+  padding-right: 19px;
+}
+
+.about .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+.about .icon-box {
+  padding: 50px 40px;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s ease-out 0s;
+  background-color: #fff;
+}
+
+.about .icon-box i {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 0;
+  transition: all 0.4s ease-out 0s;
+  background-color: rgba(var(--primary-color-rgb), 0.05);
+  color: var(--primary-color);
+}
+
+.about .icon-box h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about .icon-box p {
+  margin-bottom: 0;
+}
+
+.about .icon-box:hover i {
+  background-color: var(--primary-color);
+  color: var(--contrast-color);
+}
+
+.about .icon-boxes .col-md-6:nth-child(2) .icon-box,
+.about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+  margin-top: -40px;
+}
+
+@media (max-width: 768px) {
+
+  .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
+  .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
+    margin-top: 0;
+  }
+}
 .scroll-container {
   position: relative;
   padding-right: 17px; /* Adiciona espaço para a barra de rolagem original */
