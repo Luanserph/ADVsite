@@ -96,11 +96,11 @@ section {
   font-weight: 700;
   position: relative;
 }
-.section-title .titulo-4 h2 {
+.section-title .titulo-4 {
   font-size: 32px;
   font-weight: 700;
   position: relative;
-  bottom: -45px;
+  bottom: -40px;
 }
 
 .section-title h2:before,
