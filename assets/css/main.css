@@ -844,6 +844,12 @@ section {
   font-size: 44px;
   font-weight: 700;
 }
+.hero h3 {
+  color: var(--contrast-color);
+  margin: 0;
+  font-size: 44px;
+  font-weight: 700;
+}
 
 .hero p {
   color: rgba(var(--default-color-rgb), 0.8);
@@ -1146,11 +1152,18 @@ section {
 }
 
 .stats .stats-item {
-  padding: 30px;
+  padding: 0px;
   width: 100%;
 }
 
 .stats .stats-item span {
+  font-size: 28px;
+  display: block;
+  color: var(--default-color);
+  font-weight: 700;
+}
+
+.stats .stats-item i {
   font-size: 48px;
   display: block;
   color: var(--default-color);
