@@ -1,5 +1,5 @@
 <?php
-$to = "janainapereira.adv@gmail.com";
+$to = "victor.motta.dev@gmail.com";
 $cc = ""; // Endereço de e-mail para cópia
 $subject = "Site: ".$_REQUEST['assunto']; // Assunto do email
 $headers = "MIME-Version: 1.0\r\n";
