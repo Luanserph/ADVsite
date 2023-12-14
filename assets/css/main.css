@@ -23,10 +23,13 @@
   --background-color-rgb: 255, 255, 255;
   --default-color: #212529;
   --default-color-rgb: 33, 37, 41;
-  --primary-color: #D4a8ab;
+  --primary-color:#00002c;
   --primary-color-rgb: 232, 69, 69;
   --secondary-color: #32353a;
   --secondary-color-rgb: 	212, 168, 171;
+  --third-color:#00002c;
+  --fourth-color-rgb: 0, 0, 0;
+  --fifth-color:#D4a8ab;
   --contrast-color: #ffffff;
   --contrast-color-rgb: 255, 255, 255;
 }
@@ -72,7 +75,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--secondary-color);
+  color: var(--third-color);
   font-family: var(--heading-font);
 }
 
@@ -100,7 +103,7 @@ section {
   font-size: 32px;
   font-weight: 700;
   position: relative;
-  bottom: -40px;
+  bottom: -45px;
 }
 
 .section-title h2:before,
@@ -108,7 +111,7 @@ section {
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--primary-color);
+  background: var(--fifth-color);
   display: inline-block;
 }
 
@@ -201,13 +204,12 @@ section {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: var(--primary-color);
   font-size: 14px;
   padding: 8px 26px;
   margin: 0;
   border-radius: 4px;
   transition: 0.3s;
+  opacity: 0%;
 }
 
 .header .btn-getstarted:hover,
@@ -1165,8 +1167,8 @@ section {
   font-size: 32px;
   line-height: 0;
   transition: all 0.4s ease-out 0s;
-  background-color: rgba(var(--primary-color-rgb), 0.05);
-  color: var(--primary-color);
+  background-color: rgba(var(--fourth-color-rgb), 0.05);
+  color: var(--third-color);
 }
 
 .about .icon-box h3 {
