@@ -1,7 +1,7 @@
 <?php
 $to = "victor.motta.dev@gmail.com";
 $cc = ""; // Endereço de e-mail para cópia
-$subject = "Site: ".$_REQUEST['assunto']; // Assunto do email
+$subject = "Site: ".$_POST['assunto']; // Assunto do email
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=utf-8\r\n";
 $headers .= "From: Contato do Site <contato@janainapereiraadvogada.com>\r\n"; // Remetente
@@ -10,9 +10,9 @@ $headers .= "From: Contato do Site <contato@janainapereiraadvogada.com>\r\n"; //
 $headers .= "Cc: $cc\r\n";
 
 $fields = array();
-$fields["name"] = $_REQUEST['name'];
-$fields["email"] = $_REQUEST['email'];
-$fields["message"] = $_REQUEST['message'];
+$fields["name"] = $_POST['name'];
+$fields["email"] = $_POST['email'];
+$fields["message"] = $_POST['message'];
 
 $body = "Aqui está o que foi enviado pelo site:<br><br><br>";
 $body .= 'Nome: ' . $fields['name'] . '<br>';
