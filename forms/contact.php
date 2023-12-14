@@ -19,5 +19,11 @@ $body .= 'Nome: ' . $fields['name'] . '<br>';
 $body .= 'Email: ' . $fields['email'] . '<br>';
 $body .= 'Mensagem: ' . $fields['message'] . '<br>';
 
-return mail($to, $subject, $body, $headers);
+$sent = mail($to, $subject, $body, $headers);
+
+if ($sent) {
+    echo "Mensagem enviada."; // O email foi enviado com sucesso
+} else {
+    echo "Ocorreu um erro"; // Houve um erro no envio do email
+}
 ?>
