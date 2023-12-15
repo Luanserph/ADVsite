@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $to = "janainapereira.adv@gmail.com";
-    $cc = ""; // Endereço de e-mail para cópia
+    $cc = ""; // Endereço de e-mail para cópia 
     $subject = "Site: " . $_POST['assunto']; // Assunto do email
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
