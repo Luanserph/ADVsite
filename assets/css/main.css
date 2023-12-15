@@ -854,11 +854,13 @@ section {
 }
 .hero h3 {
   background-image: linear-gradient(to right, #D4a8ab, #f0f0f0);
-  background-clip: text;
   color: transparent;
   margin: 0;
   font-size: 44px;
   font-weight: 700;
+  /* Adicione a propriedade abaixo para garantir suporte em outros navegadores */
+  -webkit-background-clip: text; /* Safari, Chrome, iOS, Android */
+  background-clip: text; /* Padrão W3C */
 }
 
 .hero p {
