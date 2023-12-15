@@ -853,7 +853,9 @@ section {
   font-weight: 700;
 }
 .hero h3 {
-  color: var(--contrast-color);
+  background-image: linear-gradient(to right, #D4a8ab, #f0f0f0);
+  background-clip: text;
+  color: transparent;
   margin: 0;
   font-size: 44px;
   font-weight: 700;
