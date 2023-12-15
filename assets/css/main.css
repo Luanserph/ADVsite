@@ -1374,7 +1374,12 @@ section {
 ------------------------------*/
 .features .features-item {
   color: rgba(var(--default-color-rgb), 0.8);
+  font-style:italic ;
 }
+
+.icons {
+  font-size: xx-large;
+ }
 
 .features .features-item+.features-item {
   margin-top: 100px;
@@ -1389,6 +1394,7 @@ section {
 .features .features-item h3 {
   font-weight: 700;
   font-size: 26px;
+  font-style: normal;
 }
 
 .features .features-item .btn-get-started {
@@ -1425,7 +1431,7 @@ section {
 
 .features .features-item img {
   border: 6px solid var(--background-color);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+  box-shadow:30px 15px 30px -10px rgba(0, 0, 0, 0.1);
 }
 
 .features .features-item .features-img-bg {
