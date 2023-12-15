@@ -121,8 +121,8 @@ section {
   .section-title h2:before,
   .section-title h2:after {
     content: "";
-    width: 50px;
-    height: 2px;
+    width: 0px;
+    height: 0px;
     background: transparent;
     display: inline-block;
   }
