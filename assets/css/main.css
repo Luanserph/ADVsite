@@ -1436,6 +1436,9 @@ section {
 .features .features-item img {
   border: 6px solid var(--background-color);
   box-shadow:30px 15px 30px -10px rgba(0, 0, 0, 0.1);
+  max-width: 70%;
+  max-height: 70%;
+  height: auto;
 }
 
 .features .features-item .features-img-bg {
