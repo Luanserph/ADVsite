@@ -7,20 +7,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $subject = "Site: " . $_POST['assunto']; // Assunto do email
     $headers = "MIME-Version: 1.0\r\n";
     $headers .= "Content-type: text/html; charset=utf-8\r\n";
-    $headers .= "From: Site <contato@janainapereiraadvogada.com>\r\n"; // Remetente
+    $headers .= "From: Site:". $_POST['assunto'] . "<contato@janainapereiraadvogada.com>\r\n"; // Remetente
 
     // Adicione o cabeçalho Cc para enviar uma cópia
     $headers .= "Cc: $cc\r\n";
 
-    $fields = array();
-    $fields["name"] = $_POST['nome'];
-    $fields["email"] = $_POST['email'];
-    $fields["message"] = $_POST['mensagem'];
-
     $body = "Aqui está o que foi enviado pelo site:<br><br><br>";
-    $body .= 'Nome: ' . htmlspecialchars($fields['name']) . '<br>';
-    $body .= 'Email: ' . htmlspecialchars($fields['email']) . '<br>';
-    $body .= 'Mensagem: ' . htmlspecialchars($fields['message']) . '<br>';
+    $body .= 'Nome: ' . $_POST['name'] . '<br>';
+    $body .= 'Email: ' . $_POST['email'] . '<br>';
+    $body .= 'Mensagem: ' . $_POST['message'] . '<br>';
 
     if (mail($to, $subject, $body, $headers)) {
         echo json_encode(array('success' => true, 'message' => 'Email enviado com sucesso.'));
