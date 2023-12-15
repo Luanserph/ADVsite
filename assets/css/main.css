@@ -2261,6 +2261,18 @@ section {
   }
 }
 
+/* Estilos adicionais para o alerta fixo no topo */
+.alert {
+  position: fixed;
+  top: 20px; /* Ajuste a altura conforme necessário */
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 9999; /* Certifique-se de que o z-index seja maior que outros elementos */
+  width: 300px; /* Ajuste a largura do alerta conforme necessário */
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details Page
 --------------------------------------------------------------*/

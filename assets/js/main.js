@@ -208,5 +208,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
   window.addEventListener('load', aosInit);
+  $('.php-email-form').submit(function(e){
+    e.preventDefault();
+    $.ajax({
+        type: 'POST',
+        url: 'forms/contact.php', // Seu arquivo PHP para enviar o email
+        data: $('.php-email-form').serialize(),
+        dataType: 'json', // Indica que o retorno é um JSON
+        success: function(response){
+            if(response.success){
+              alert('Email enviado com sucesso!');
+            } else {
+                // Se houver um erro no envio do email
+                alert(response.message);
+            }
+        },
+        error: function(){
+            // Se houver um erro na requisição AJAX
+            alert('Erro na requisição AJAX.');
+        }
+    });
+});
+
 
 });
