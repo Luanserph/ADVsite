@@ -8,7 +8,7 @@ $headers .= "From: Contato do Site <contato@janainapereiraadvogada.com>\r\n"; //
 
 // Adicione o cabeçalho Cc para enviar uma cópia
 $headers .= "Cc: $cc\r\n";
-
+ 
 $fields = array();
 $fields["name"] = $_POST['name'];
 $fields["email"] = $_POST['email'];
