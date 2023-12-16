@@ -28,6 +28,8 @@ A estrutura do projeto é basicamente organizada da seguinte forma:
 
 ![Screenshot 1](/screenshots/screenshot-1.jpg)
 ![Screenshot 2](/screenshots/screenshot-2.jpg)
+![Screenshot 2](/screenshots/screenshot-3.jpg)
+![Screenshot 2](/screenshots/screenshot-4.jpg)
 
 ## Colaboradores
 
